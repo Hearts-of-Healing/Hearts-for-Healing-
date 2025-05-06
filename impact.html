@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Impact - Hearts for Healing</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <script>
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.body.insertAdjacentHTML('afterbegin', data);
+      });
+  </script>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content animate-on-scroll">
+      <h1>Our Impact</h1>
+      <p>See the difference we've made together</p>
+    </div>
+  </header>
+
+  <!-- Stats Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2>By The Numbers</h2>
+        <p class="subtitle">Our reach and impact since 2020</p>
+      </div>
+
+      <div class="impact-stats">
+        <div class="stat-item animate-on-scroll delay-1">
+          <div class="stat-number" data-count="500">0</div>
+          <div class="stat-label">Cards Delivered</div>
+        </div>
+
+        <div class="stat-item animate-on-scroll delay-2">
+          <div class="stat-number" data-count="120">0</div>
+          <div class="stat-label">Gift Packages</div>
+        </div>
+
+        <div class="stat-item animate-on-scroll delay-3">
+          <div class="stat-number" data-count="8">0</div>
+          <div class="stat-label">Active Chapters</div>
+        </div>
+
+        <div class="stat-item animate-on-scroll delay-3">
+          <div class="stat-number" data-count="250">0</div>
+          <div class="stat-label">Volunteers</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta-content animate-on-scroll">
+        <h2>Make an Impact</h2>
+        <p>Join our mission to spread joy and healing</p>
+        <a href="get-involved.html" class="btn btn-primary btn-lg">Get Involved</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stories Section -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2>Heartwarming Stories</h2>
+        <p>The real impact behind the numbers</p>
+      </div>
+      <div class="stories-grid animate-on-scroll delay-1">
+        <div class="story-card">
+          <div class="story-image">
+            <img src="images/stories/story1.jpg" alt="Sarah's Story">
+          </div>
+          <div class="story-content">
+            <h3>Sarah's Smile</h3>
+            <p>"Receiving a card during my hospital stay made me feel seen and cared for during a difficult time."</p>
+            <div class="story-meta">
+              <span class="story-author">Sarah, 34</span>
+              <span class="story-location">Boston, MA</span>
+            </div>
+          </div>
+        </div>
+        <div class="story-card">
+          <div class="story-image">
+            <img src="images/stories/story2.jpg" alt="James' Story">
+          </div>
+          <div class="story-content">
+            <h3>James' Journey</h3>
+            <p>"The care package arrived on a particularly hard day and gave me the encouragement I needed."</p>
+            <div class="story-meta">
+              <span class="story-author">James, 62</span>
+              <span class="story-location">Chicago, IL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2>Moments of Joy</h2>
+        <p>Capturing the smiles we've helped create</p>
+      </div>
+      <div class="gallery-grid animate-on-scroll delay-1">
+        <div class="gallery-item">
+          <img src="images/gallery/1.jpg" alt="Volunteer event">
+          <div class="gallery-caption">Card-making workshop</div>
+        </div>
+        <!-- More gallery items -->
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

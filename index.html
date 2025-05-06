@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hearts for Healing - Home</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <script>
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.body.insertAdjacentHTML('afterbegin', data);
+      });
+  </script>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content animate-on-scroll">
+      <h1>Hearts for Healing</h1>
+      <p>Join our mission to bring comfort and joy to those in need through handmade gifts and heartfelt messages</p>
+      <div class="hero-actions">
+        <a href="get-involved.html" class="btn btn-primary pulse-animate">Get Involved</a>
+        <a href="about.html" class="btn btn-outline">Learn More</a>
+      </div>
+    </div>
+    <div class="hero-bg"></div>
+  </header>
+
+  <!-- Mission Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2>Our Mission</h2>
+        <p class="subtitle">Bringing comfort to those who need it most</p>
+      </div>
+      
+      <div class="mission-grid">
+        <div class="mission-card animate-on-scroll delay-1">
+          <div class="mission-icon">
+            <i class="fas fa-heart"></i>
+          </div>
+          <h3>Handmade Cards</h3>
+          <p>Our volunteers create unique, thoughtful cards personalized for each recipient.</p>
+        </div>
+        
+        <div class="mission-card animate-on-scroll delay-2">
+          <div class="mission-icon">
+            <i class="fas fa-gift"></i>
+          </div>
+          <h3>Care Packages</h3>
+          <p>We deliver special packages filled with comforting items to show we care.</p>
+        </div>
+        
+        <div class="mission-card animate-on-scroll delay-3">
+          <div class="mission-icon">
+            <i class="fas fa-hands-helping"></i>
+          </div>
+          <h3>Community Events</h3>
+          <p>We organize activities to spread kindness and build connections.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Impact Section -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2>Our Impact</h2>
+        <p class="subtitle">Making a difference one heart at a time</p>
+      </div>
+      
+      <div class="impact-stats">
+        <div class="stat-item animate-on-scroll delay-1">
+          <div class="stat-number" data-count="500">0</div>
+          <div class="stat-label">Cards Delivered</div>
+        </div>
+        
+        <div class="stat-item animate-on-scroll delay-2">
+          <div class="stat-number" data-count="120">0</div>
+          <div class="stat-label">Gift Packages</div>
+        </div>
+        
+        <div class="stat-item animate-on-scroll delay-3">
+          <div class="stat-number" data-count="8">0</div>
+          <div class="stat-label">Active Chapters</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta-content animate-on-scroll">
+        <h2>Ready to Make a Difference?</h2>
+        <p>Join our community of compassionate volunteers today</p>
+        <a href="get-involved.html" class="btn btn-primary btn-lg">Get Started</a>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
