@@ -335,8 +335,6 @@ section {
 }
 
 .team-image-link {
-  background-color: red !important; /* Visual marker */
-  border: 2px dashed yellow !important;
   display: block;
   width: 100%;
   height: 300px;
@@ -345,8 +343,6 @@ section {
 }
 
 .team-image-link img {
-  border: 3px solid lime !important;
-  opacity: 0.8 !important;
   width: 100%;
   height: 100%;
   object-fit: cover;
