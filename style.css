@@ -172,7 +172,8 @@ section {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: linear-gradient(135deg, var(--primary), var(--secondary-light));
+  background: linear-gradient(135deg, var(--primary), var(--secondary-light)),
+    url('Hearts for healing.jpg') center/cover no-repeat;
   color: var(--white);
   padding: 4rem 2rem;
   overflow: hidden;
