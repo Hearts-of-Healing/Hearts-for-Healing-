@@ -7,6 +7,30 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* TEMPORARY INLINE STYLES TO GUARANTEE CENTERING */
+    .centered-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .mission-grid {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin: 40px auto;
+      max-width: 1000px;
+    }
+    .mission-card {
+      text-align: center;
+      width: 300px;
+    }
+  </style>
 </head>
 <body>
   <!-- Navbar -->
@@ -18,8 +42,9 @@
       });
   </script>
 
-  <!-- Hero Section -->
+  <!-- Hero Section with Image -->
   <header class="hero">
+    <div class="hero-image"></div>
     <div class="hero-content animate-on-scroll">
       <h1>Hearts for Healing</h1>
       <p>Join our mission to bring comfort and joy to those in need through handmade gifts and heartfelt messages</p>
@@ -28,17 +53,18 @@
         <a href="about.html" class="btn btn-outline">Learn More</a>
       </div>
     </div>
-    <div class="hero-bg"></div>
   </header>
 
-  <!-- Mission Section -->
+
+  <!-- Our Purpose Section -->
   <section class="section">
     <div class="container">
-      <div class="section-header animate-on-scroll">
-        <h2>Our Mission</h2>
-        <p class="subtitle">Bringing comfort to those who need it most</p>
+      <div class="centered-container">
+        <h2>Our Purpose</h2>
+        <p>As a group of high schoolers passionate about spreading awareness about healthcare by interacting with individuals in need and providing support in a small yet meaningful manner, we decided to start this non profit organization. As a part of this organization, our main focus is: donating hygiene products, handmade gifts, cards, letters, and flowers to spread positivity and make a difference for patients. Our goal is to partner with helping centers and members across united states and expand to provide support by brightening the days of patients.</p>
       </div>
       
+      <!-- Mission Cards Section -->
       <div class="mission-grid">
         <div class="mission-card animate-on-scroll delay-1">
           <div class="mission-icon">
@@ -67,29 +93,42 @@
     </div>
   </section>
 
-  <!-- Impact Section -->
+  <!-- How It Started Section -->
   <section class="section bg-light">
     <div class="container">
-      <div class="section-header animate-on-scroll">
-        <h2>Our Impact</h2>
-        <p class="subtitle">Making a difference one heart at a time</p>
+      <div class="centered-container">
+        <h2>How It All Started</h2>
+        <p>Hearts for Healing was founded by a group of highschoolers with like minded desire to make change in the community. After viewing local hospitals and volunteering at pantries and helping centers, we noticed how small acts of kindness could light up patients' days and help them focus on the bigger picture in life - thereby enabling a quick healing process. Moved by various stories, we came together to form a student-led nonprofit organization focused on spreading positivity through handmade cards, small gifts, flowers, and meaningful connections.</p>
       </div>
-      
-      <div class="impact-stats">
-        <div class="stat-item animate-on-scroll delay-1">
-          <div class="stat-number" data-count="500">0</div>
-          <div class="stat-label">Cards Delivered</div>
-        </div>
-        
-        <div class="stat-item animate-on-scroll delay-2">
-          <div class="stat-number" data-count="120">0</div>
-          <div class="stat-label">Gift Packages</div>
-        </div>
-        
-        <div class="stat-item animate-on-scroll delay-3">
-          <div class="stat-number" data-count="8">0</div>
-          <div class="stat-label">Active Chapters</div>
-        </div>
+    </div>
+  </section>
+
+  <!-- Why It Matters Section -->
+  <section class="section">
+    <div class="container">
+      <div class="centered-container">
+        <h2>Why It Matters</h2>
+        <p>Medicine heals the body, likewise, emotional support heals the heart. Patients especially the ones in long term care go through isolating and overwhelming times. Gestures of kindness can not only alleviate this but also make a big impact. Join us, make an impact.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- What We Do Section -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="centered-container">
+        <h2>What We Do Behind the Scenes</h2>
+        <p>Behind the scenes Hearts for Healing plans to meet weekly making handmade items, organizing drives or fundraisers, reaching out to organizations, packaging and delivering the gifts.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who We Work With Section -->
+  <section class="section">
+    <div class="container">
+      <div class="centered-container">
+        <h2>Who We Work With</h2>
+        <p>Hearts for healing is interested to work with general care hospitals, veteran hospitals, cancer centers, food pantries, and many others! Feel free to reach out to us via our Instagram, email, or LinkedIn for any questions or a quick chat!</p>
       </div>
     </div>
   </section>
@@ -97,10 +136,12 @@
   <!-- CTA Section -->
   <section class="section cta-section">
     <div class="container">
-      <div class="cta-content animate-on-scroll">
-        <h2>Ready to Make a Difference?</h2>
-        <p>Join our community of compassionate volunteers today</p>
-        <a href="get-involved.html" class="btn btn-primary btn-lg">Get Started</a>
+      <div class="centered-container">
+        <h2>Want to help? Here's how!</h2>
+        <div class="cta-buttons">
+          <a href="get-involved.html" class="btn btn-primary">Volunteer</a>
+          <a href="https://www.gofundme.com/f/bringing-smiles-to-nj-hospital-patients" class="btn btn-outline">Donate</a>
+        </div>
       </div>
     </div>
   </section>
