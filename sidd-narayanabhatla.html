@@ -1,0 +1,41 @@
+<!-- sidd-narayanabhtla.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sidd Narayanabhtla - Hearts for Healing</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <script>
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.querySelector('body').insertAdjacentHTML('afterbegin', data);
+      });
+  </script>
+  <main class="team-profile">
+    <div class="profile-container">
+      <div class="profile-image">
+        <img src="Sidd.jpg" alt="Sidd Narayanabhtla">
+      </div>
+      <div class="profile-content">
+        <h1>Sidd Narayanabhtla</h1>
+        <p class="role">Social Media Director</p>
+        <div class="profile-bio">
+          <p>Hello! My name is Sidd Narayanabhtla and I am a rising senior at Ridge High School and the Social Media Driector at Hearts for Healing. (Add More)</p>
+          <p>NEED TO ADD</p>
+          <p>NEED TO ADD</p>
+        </div>
+        <a href="../about.html#leadership" class="btn">
+          <i class="fas fa-arrow-left"></i> Back to Team
+        </a>
+      </div>
+    </div>
+  </main>
+  <script src="../script.js"></script>
+</body>
+</html>
