@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="animations.css">
 </head>
 <body>
   <!-- Navbar -->
@@ -20,52 +21,67 @@
 
   <!-- Hero Section -->
   <header class="hero">
-    <div class="hero-content animate-on-scroll">
-      <h1>Contact Us</h1>
-      <p>Get in touch with our team</p>
-    </div>
-  </header>
+  <div class="hero-content animate-on-scroll">
+    <h1>Contact Us</h1>
+    <p class="delay-1">Get in touch with our team</p>
+  </div>
+</header>
   <!-- Social Diamond Section -->
-  <section class="social-diamond-section">
-    <div class="container">
-      <div class="social-diamond animate-on-scroll">
-        <h3>Connect With Us</h3>
-        <div class="diamond-grid">
-          <!-- Top (GoFundMe) -->
-          <a href="https://www.gofundme.com/f/bringing-smiles-to-nj-hospital-patients" class="diamond-item top" target="_blank">
-            <img src="Donate.jpg" alt="GoFundMe" class="social-img">
-            <span>GoFundMe</span>
-          </a>
-
-          <!-- Middle Left (Instagram) -->
-          <a href="https://www.instagram.com/heartsforhealing_/" class="diamond-item middle-left" target="_blank">
-            <img src="Insta.jpg" alt="Instagram" class="social-img">
-            <span>Instagram</span>
-          </a>
-
-          <!-- Middle Right (LinkedIn) -->
-          <a href="https://www.linkedin.com/company/hearts-for-healing/?viewAsMember=true" class="diamond-item middle-right" target="_blank">
-            <img src="Linkden.jpg" alt="LinkedIn" class="social-img">
-            <span>LinkedIn</span>
-          </a>
-
-          <!-- Bottom (Email) -->
-            <a href="mailto:heartsforhealing2025@gmail.com?subject=Hearts%20for%20Healing%20Inquiry&body=Hello%20H4H%20Team," 
-               class="diamond-item bottom">
-            <img src="Gmail.jpg" alt="Email" class="social-img">
-            <span>(NEEDS TO BE FIXED) Email</span>
-          </a>
+  <section class="social-cards">
+  <div class="container">
+    <div class="social-grid">
+      <!-- GoFundMe Card -->
+      <div class="social-card animate-fade-up">
+        <div class="social-icon">
+          <i class="fas fa-donate"></i>
         </div>
+        <h3>Support Us</h3>
+        <p>Contribute to our GoFundMe campaign</p>
+        <a href="https://www.gofundme.com/f/bringing-smiles-to-nj-hospital-patients" 
+           class="btn btn-small" target="_blank">Donate</a>
+      </div>
+      
+      <!-- Instagram Card -->
+      <div class="social-card animate-fade-up" style="animation-delay: 0.2s">
+        <div class="social-icon">
+          <i class="fab fa-instagram"></i>
+        </div>
+        <h3>Follow Us</h3>
+        <p>See our latest updates on Instagram</p>
+        <a href="https://www.instagram.com/heartsforhealing_/" 
+           class="btn btn-small" target="_blank">@heartsforhealing_</a>
+      </div>
+      
+      <!-- LinkedIn Card -->
+      <div class="social-card animate-fade-up" style="animation-delay: 0.4s">
+        <div class="social-icon">
+          <i class="fab fa-linkedin"></i>
+        </div>
+        <h3>Connect</h3>
+        <p>Join our professional network</p>
+        <a href="https://www.linkedin.com/company/hearts-for-healing/" 
+           class="btn btn-small" target="_blank">LinkedIn</a>
+      </div>
+      
+      <!-- Email Card -->
+      <div class="social-card animate-fade-up" style="animation-delay: 0.6s">
+        <div class="social-icon">
+          <i class="fas fa-envelope"></i>
+        </div>
+        <h3>Email Us</h3>
+        <p>Send us a message directly</p>
+        <a href="mailto:heartsforhealing2025@gmail.com" 
+           class="btn btn-small">heartsforhealing2025@gmail.com</a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- Contact Form Section -->
   <section class="section">
     <div class="container">
       <div class="section-header animate-on-scroll">
         <h2>Send us a Message</h2>
-        <h2>FUNCTION NOT WORKING</h2>
         <p class="subtitle">We'd love to hear from you</p>
       </div>
 
@@ -99,5 +115,6 @@
   </section>
 
   <script src="script.js"></script>
+  <script src="animations.js"></script>
 </body>
 </html>

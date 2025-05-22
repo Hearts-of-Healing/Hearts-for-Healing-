@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="animations.css">
 </head>
 <body>
 
@@ -22,10 +23,10 @@
   </script>
 
   <!-- Hero Section -->
-  <header class="hero">
-    <h1 class="animate-on-scroll">About Our Healing Journey</h1>
-    <p class="animate-on-scroll" style="transition-delay: 0.2s">The hearts behind the healing</p>
-  </header>
+ <header class="hero">
+  <h1 class="animate-on-scroll">About Our Healing Journey</h1>
+  <p class="animate-on-scroll delay-1">The hearts behind the healing</p>
+</header>
 
   <!-- Main Content -->
   <main class="content">
@@ -50,9 +51,19 @@
       </div>
 
       <!-- Leadership Tab Content -->
-      <div id="leadership" class="tab-content" style="display:block">
-        <div class="team-grid">
-          <!-- Mayank Jadhav -->
+      <section class="team-section">
+  <div class="container">
+    <h2 class="section-title animate-fade-in">Meet Our Team</h2>
+    <p class="section-subtitle animate-fade-in" style="animation-delay: 0.2s">The passionate hearts behind our mission</p>
+    
+    <div class="team-tabs">
+      <!-- Tab buttons remain the same -->
+    </div>
+
+    <div id="leadership" class="tab-content" style="display:block">
+      <div class="team-grid">
+        <!-- Mayank Jadhav - Sample Card (repeat for each team member) -->
+        <!-- Hasini Namburi -->
           <div class="team-card">
             <a href="mayank-jadhav.html" class="team-image-link">
               <img src="Mayank.jpg" alt="Mayank Jadhav">
@@ -60,7 +71,7 @@
             <div class="team-info">
               <h3>Mayank Jadhav</h3>
               <p class="role">Co-Founder</p>
-              <a href="mayank-jadhav.html" class="btn btn-small">View Profile</a>
+              <a href="hasini-namburi.html" class="btn btn-small">View Profile</a>
             </div>
           </div>
 
@@ -108,7 +119,7 @@
             <div class="team-info">
               <h3>Sidd Narayanabhatla</h3>
               <p class="role">Social Media Director</p>
-              <a href="sidd-narayanabhatla" class="btn btn-small">View Profile</a>
+              <a href="sidd-narayanabhatla.html" class="btn btn-small">View Profile</a>
             </div>
           </div>
 
@@ -127,7 +138,7 @@
           <!-- Raina Prasad -->
           <div class="team-card">
             <a href="raina-prasad.html" class="team-image-link">
-              <img src="Raina .jpg" alt="Raina Prasad">
+              <img src="Raina.jpg" alt="Raina Prasad">
             </a>
             <div class="team-info">
               <h3>Raina Prasad</h3>
@@ -245,5 +256,6 @@
   </footer>
 
   <script src="script.js"></script>
+  <script src="animations.js"></script>
 </body>
 </html>
