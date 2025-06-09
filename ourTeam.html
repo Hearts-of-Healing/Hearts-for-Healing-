@@ -331,6 +331,164 @@
       font-size: 2.5rem;
       color: #333;
     }
+    /* Chapters Section - Now matching Team Cards exactly */
+    .chapters-section {
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(10px);
+      padding: 4rem 2rem;
+      margin: 2rem auto;
+      max-width: 1400px;
+      border-radius: 2rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      transform: translateY(20px);
+      opacity: 0;
+      transition: all 0.6s ease-out;
+    }
+    
+    .chapters-section.animate-on-scroll {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    
+    .chapters-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+    
+    .chapter-card {
+      background: white;
+      border-radius: 1.5rem;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+      text-align: center;
+      padding: 2.5rem 2rem;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      position: relative;
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    
+    .chapter-card:nth-child(1) { transition: all 0.5s ease 0.1s; }
+    .chapter-card:nth-child(2) { transition: all 0.5s ease 0.2s; }
+    .chapter-card:nth-child(3) { transition: all 0.5s ease 0.3s; }
+    .chapter-card:nth-child(4) { transition: all 0.5s ease 0.4s; }
+    
+    .chapters-section.animate-on-scroll .chapter-card {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    
+    .chapter-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 5px;
+      background: linear-gradient(90deg, #ff6b6b, #ff8e8e, #ffb3b3);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+    
+    .chapter-card:hover {
+      transform: translateY(-10px) !important;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    }
+    
+    .chapter-card:hover::before {
+      transform: scaleX(1);
+    }
+    
+    .chapter-icon {
+      font-size: 2.5rem;
+      color: #ff6b6b;
+      margin-bottom: 1.5rem;
+      transition: all 0.3s ease;
+    }
+    
+    .chapter-card:hover .chapter-icon {
+      transform: translateY(-5px) scale(1.1);
+      color: #ff4757;
+    }
+    
+    .chapter-card h3 {
+      color: #ff6b6b;
+      margin-bottom: 1rem;
+      transition: all 0.3s ease;
+      font-size: 1.5rem;
+    }
+    
+    .chapter-card:hover h3 {
+      color: #ff4757;
+      transform: scale(1.05);
+    }
+    
+    .chapter-card p {
+      color: #57606f;
+      margin-bottom: 1.5rem;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+    }
+    
+    .chapter-card:hover p {
+      transform: translateY(-3px);
+    }
+    
+    .chapter-location {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #747d8c;
+      margin-bottom: 1.5rem;
+      transition: all 0.3s ease;
+    }
+    
+    .chapter-location i {
+      margin-right: 0.5rem;
+      color: #ff6b6b;
+    }
+    
+    .chapter-card:hover .chapter-location {
+      transform: translateY(-3px);
+    }
+    
+    .chapter-btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background: linear-gradient(135deg, #ff6b6b, #ff8e8e);
+      color: white;
+      border-radius: 50px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .chapter-btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+      transition: all 0.5s ease;
+    }
+    
+    .chapter-btn:hover {
+      background: linear-gradient(135deg, #ff4757, #ff6b6b);
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+    }
+    
+    .chapter-btn:hover::before {
+      left: 100%;
+    }
   </style>
 </head>
 <body>
@@ -394,6 +552,130 @@
       </div>
     </div>
   </section>
+  
+  <!-- New Chapters Section with Matching Team Card Style -->
+  
+  <section class="chapters-section animate-on-scroll">
+    <div class="container">
+      <h2 class="section-header">Our Chapters</h2>
+      
+      <div class="chapters-grid">
+        <!-- Chapter 1 -->
+        <div class="chapter-card">
+          <div class="chapter-icon">
+            <i class="fas fa-globe-americas"></i>
+          </div>
+          <h3>North America</h3>
+          <div class="chapter-location">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>United States & Canada</span>
+          </div>
+          <p>Our founding chapter with active members across multiple cities and campuses.</p>
+          <a href="north-america-chapter.html" class="chapter-btn">Learn More</a>
+        </div>
+        
+        <!-- Chapter 2 -->
+        <div class="chapter-card">
+          <div class="chapter-icon">
+            <i class="fas fa-globe-europe"></i>
+          </div>
+          <h3>Europe</h3>
+          <div class="chapter-location">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Multiple Countries</span>
+          </div>
+          <p>Expanding our healing mission across European universities and communities.</p>
+          <a href="europe-chapter.html" class="chapter-btn">Learn More</a>
+        </div>
+        
+        <!-- Chapter 3 -->
+        <div class="chapter-card">
+          <div class="chapter-icon">
+            <i class="fas fa-globe-asia"></i>
+          </div>
+          <h3>Asia</h3>
+          <div class="chapter-location">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Multiple Countries</span>
+          </div>
+          <p>Growing network of volunteers bringing healing to Asian communities.</p>
+          <a href="asia-chapter.html" class="chapter-btn">Learn More</a>
+        </div>
+        
+        <!-- Chapter 4 -->
+        <div class="chapter-card">
+          <div class="chapter-icon">
+            <i class="fas fa-globe"></i>
+          </div>
+          <h3>Global Online</h3>
+          <div class="chapter-location">
+            <i class="fas fa-network-wired"></i>
+            <span>Worldwide</span>
+          </div>
+          <p>Our digital community connecting volunteers and those in need globally.</p>
+          <a href="online-chapter.html" class="chapter-btn">Learn More</a>
+        </div>
+        
+        <!-- Chapter 5 -->
+        <div class="chapter-card">
+          <div class="chapter-icon">
+            <i class="fas fa-flag-usa"></i>
+          </div>
+          <h3>USA West</h3>
+          <div class="chapter-location">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Western United States</span>
+          </div>
+          <p>Serving communities across California, Washington, and neighboring states.</p>
+          <a href="west-chapter.html" class="chapter-btn">Learn More</a>
+        </div>
+        
+        <!-- Chapter 6 -->
+        <div class="chapter-card">
+          <div class="chapter-icon">
+            <i class="fas fa-flag-usa"></i>
+          </div>
+          <h3>USA East</h3>
+          <div class="chapter-location">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Eastern United States</span>
+          </div>
+          <p>Active in New York, Florida, and throughout the Eastern seaboard.</p>
+          <a href="east-chapter.html" class="chapter-btn">Learn More</a>
+        </div>
+        
+        <!-- Chapter 7 -->
+        <div class="chapter-card">
+          <div class="chapter-icon">
+            <i class="fas fa-globe-africa"></i>
+          </div>
+          <h3>Africa</h3>
+          <div class="chapter-location">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Multiple Countries</span>
+          </div>
+          <p>Bringing healing resources to communities across the African continent.</p>
+          <a href="africa-chapter.html" class="chapter-btn">Learn More</a>
+        </div>
+        
+        <!-- Chapter 8 -->
+        <div class="chapter-card">
+          <div class="chapter-icon">
+            <i class="fas fa-globe-americas"></i>
+          </div>
+          <h3>Latin America</h3>
+          <div class="chapter-location">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Multiple Countries</span>
+          </div>
+          <p>Serving Spanish and Portuguese speaking communities throughout the region.</p>
+          <a href="latin-america-chapter.html" class="chapter-btn">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
 
   <script>
     document.addEventListener('DOMContentLoaded', function() {
