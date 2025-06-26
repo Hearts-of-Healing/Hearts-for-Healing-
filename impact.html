@@ -1,129 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Impact - Hearts for Healing</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Our Impact - Hearts of Healing</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Navbar -->
+
+  <!-- Navbar Loading Script -->
   <script>
     fetch('navbar.html')
       .then(response => response.text())
       .then(data => {
-        document.body.insertAdjacentHTML('afterbegin', data);
-      });
+        document.querySelector('body').insertAdjacentHTML('afterbegin', data);
+      })
+      .catch(error => console.error('Error loading the navbar:', error));
   </script>
 
   <!-- Hero Section -->
   <header class="hero">
-    <div class="hero-content animate-on-scroll">
-      <h1>Our Impact</h1>
-      <p>See the difference we've made together</p>
-    </div>
+    <h1>Our Impact</h1>
+    <p>See the difference we've made together.</p>
   </header>
 
-  <!-- Stats Section -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header animate-on-scroll">
-        <h2>By The Numbers</h2>
-        <p class="subtitle">Our reach and impact since 2020</p>
-      </div>
+  <!-- Main Content Section -->
+  <section class="content">
+    <h2>By the Numbers</h2>
+    <p>In just a few years, Hearts of Healing has reached numerous milestones and touched countless lives across the country. Here's an overview of what we've accomplished so far:</p>
+    <ul>
+      <li><strong>300+</strong> handmade cards delivered to patients in hospitals and nursing homes</li>
+      <li><strong>120+</strong> gift packages delivered to local hospitals and medical facilities</li>
+      <li><strong>5+</strong> active chapters across the U.S., spreading joy from coast to coast</li>
+      <li><strong>50+</strong> volunteers dedicated to spreading positivity</li>
+      <li><strong>200+</strong> hospitals, clinics, and care centers that have received our gifts</li>
+    </ul>
 
-      <div class="impact-stats">
-        <div class="stat-item animate-on-scroll delay-1">
-          <div class="stat-number" data-count="500">0</div>
-          <div class="stat-label">Cards Delivered</div>
-        </div>
-
-        <div class="stat-item animate-on-scroll delay-2">
-          <div class="stat-number" data-count="120">0</div>
-          <div class="stat-label">Gift Packages</div>
-        </div>
-
-        <div class="stat-item animate-on-scroll delay-3">
-          <div class="stat-number" data-count="8">0</div>
-          <div class="stat-label">Active Chapters</div>
-        </div>
-
-        <div class="stat-item animate-on-scroll delay-3">
-          <div class="stat-number" data-count="250">0</div>
-          <div class="stat-label">Volunteers</div>
-        </div>
-      </div>
+    <h2>Moments That Matter</h2>
+    <p>Every card, every gift, and every moment of kindness makes a lasting impact on those who receive it. Here are a few of the highlights that show the difference we are making:</p>
+    
+    <div class="impact-gallery">
+      <img src="images/card1.jpg" alt="Card Delivery" />
+      <img src="images/gift2.jpg" alt="Gift Assembly" />
+      <img src="images/group3.jpg" alt="Volunteers in Action" />
     </div>
+
+    <h2>Personal Stories</h2>
+    <p>Below are a few stories from people whose lives were touched by our efforts:</p>
+
+    <blockquote>
+      "Receiving a handmade card brought so much joy to my hospital stay — thank you! It made me feel remembered and loved." <br> — Sarah, Hospital Patient
+    </blockquote>
+    
+    <blockquote>
+      "It’s a small act of kindness, but it made a big impact on my healing process. The card and gifts really helped me stay positive." <br> — John, Cancer Survivor
+    </blockquote>
+
+    <blockquote>
+      "I never expected to get something so personalized. It made me smile and forget about my pain for a moment. Thank you to everyone who made it happen." <br> — Emily, Patient in Recovery
+    </blockquote>
+
+    <h2>Impact Through Community Engagement</h2>
+    <p>Our volunteers and supporters play a vital role in creating and delivering these small acts of kindness. Here’s a look at how our community has been involved:</p>
+
+    <ul>
+      <li><strong>Volunteer Workshops:</strong> We host workshops where volunteers come together to make cards, create gift packages, and assemble care packages for patients. These workshops foster a sense of community and purpose.</li>
+      <li><strong>Fundraising Events:</strong> Through local events such as bake sales, charity runs, and auctions, we raise funds to support our initiatives and bring more smiles to those in need.</li>
+      <li><strong>Partnerships with Local Businesses:</strong> We collaborate with local businesses who donate materials and sponsor our events to ensure we can continue our work.</li>
+      <li><strong>School and Corporate Involvement:</strong> Many schools and companies join us in spreading kindness by holding card-making events and contributing to our fundraising efforts.</li>
+    </ul>
+
+    <h2>Looking Ahead</h2>
+    <p>We’re just getting started. As we continue to expand our reach, we aim to:</p>
+    <ul>
+      <li>Grow our network of volunteers and chapters nationwide.</li>
+      <li>Increase our hospital and clinic partnerships to reach even more patients.</li>
+      <li>Launch new community outreach programs to engage with more supporters and spread joy.</li>
+      <li>Offer more personalized experiences for patients, including special holiday cards and gifts.</li>
+    </ul>
+
+    <h2>Join Us in Making a Difference</h2>
+    <p>We are incredibly proud of everything we’ve achieved together, but there’s still so much more to do. Whether you donate, volunteer, or simply spread the word, you can help us continue making a meaningful impact. Join us in our mission to spread kindness, healing, and hope to those who need it most.</p>
+
+    <br>
+    <!-- Call-to-action Button -->
+    <button onclick="window.location.href='get-involved.html'">Get Involved</button>
   </section>
 
-  <!-- CTA Section -->
-  <section class="section cta-section">
-    <div class="container">
-      <div class="cta-content animate-on-scroll">
-        <h2>Make an Impact</h2>
-        <p>Join our mission to spread joy and healing</p>
-        <a href="get-involved.html" class="btn btn-primary btn-lg">Get Involved</a>
-      </div>
-    </div>
-  </section>
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 Hearts of Healing. All Rights Reserved.</p>
+  </footer>
 
-  <!-- Stories Section -->
-  <section class="section bg-light">
-    <div class="container">
-      <div class="section-header animate-on-scroll">
-        <h2>Heartwarming Stories</h2>
-        <p>The real impact behind the numbers</p>
-      </div>
-      <div class="stories-grid animate-on-scroll delay-1">
-        <div class="story-card">
-          <div class="story-image">
-            <img src="images/stories/story1.jpg" alt="Sarah's Story">
-          </div>
-          <div class="story-content">
-            <h3>Sarah's Smile</h3>
-            <p>"Receiving a card during my hospital stay made me feel seen and cared for during a difficult time."</p>
-            <div class="story-meta">
-              <span class="story-author">Sarah, 34</span>
-              <span class="story-location">Boston, MA</span>
-            </div>
-          </div>
-        </div>
-        <div class="story-card">
-          <div class="story-image">
-            <img src="images/stories/story2.jpg" alt="James' Story">
-          </div>
-          <div class="story-content">
-            <h3>James' Journey</h3>
-            <p>"The care package arrived on a particularly hard day and gave me the encouragement I needed."</p>
-            <div class="story-meta">
-              <span class="story-author">James, 62</span>
-              <span class="story-location">Chicago, IL</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Gallery Section -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header animate-on-scroll">
-        <h2>Moments of Joy</h2>
-        <p>Capturing the smiles we've helped create</p>
-      </div>
-      <div class="gallery-grid animate-on-scroll delay-1">
-        <div class="gallery-item">
-          <img src="images/gallery/1.jpg" alt="Volunteer event">
-          <div class="gallery-caption">Card-making workshop</div>
-        </div>
-        <!-- More gallery items -->
-      </div>
-    </div>
-  </section>
-
-  <script src="script.js"></script>
 </body>
 </html>

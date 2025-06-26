@@ -1575,3 +1575,61 @@ textarea.form-control {
 
 }
 
+/* Chapters Section Styles */
+.chapters-section {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+}
+
+.chapter-card {
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.chapter-card h3 {
+  color: #e83f6f;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.chapter-members {
+  margin-top: 20px;
+}
+
+.member {
+  margin-bottom: 25px;
+}
+
+.member h4 {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.member-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.member-info img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.member-info h5 {
+  margin: 0 0 5px 0;
+  color: #333;
+}
+
+.member-info p {
+  margin: 0;
+  color: #666;
+  line-height: 1.5;
+}
+
